@@ -1,0 +1,32 @@
+.b-scroll {
+	height: 705px;
+	background: $dark-back;
+	color: $b-scroll-text;
+	text-align: center;
+	position: relative;
+	&__scroll {
+		width: 150px;
+		padding-top: 50px;
+		background: url(../img/icon-mouse.png) no-repeat top center;
+		font-size: 12px;
+		position: absolute;
+		bottom: 40px;
+		left: calc(50% - 75px);	
+	}
+	.h1, .h3 {
+		letter-spacing: 6px;
+	}
+	.h1 {
+		line-height: 670px;
+		position: absolute;
+		width: 100%;
+	}
+	.h3 {
+		line-height: 670px;
+		position: absolute;
+		top: 70px;
+		width: 100%;
+	}
+}
+@import 'b-scroll_tablets';
+@import 'b-scroll_mobiles';

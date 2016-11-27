@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.h1,.h2,.h3,.h4,.h5,.h6,p {
+	margin: 0;
+	padding: 0;
+}
+.h1 {
+	font-size: 72px;
+	font-family: noodle;
+}
+.h2 {
+	font-size: 48px;
+	font-family: noodle;
+	letter-spacing: 4px;
+}
+.h3 {
+	font-size: 36px;
+	font-family: noodle;
+}
+.h4 {
+	font-size: 24px;
+}
+.h5 {
+	font-size: 18px;
+}
+p {
+	font-size: 14px;
+	font-family: roboto--thin;
+	color: $p-color;
+	font-weight: bold;
+}
+.text-padding {
+	padding: 0 185px;
+}
+.white {
+	color: #fff;
+}
+.pt--big {
+	padding-top: $space--big;
+}
+.pt--reg {
+	padding-top: $space--reg;
+}
+.mb--big {
+	margin-bottom: $space--big;
+}
+.mb--reg {
+	margin-bottom: $space--reg;
+}
+.mb--sm {
+	margin-bottom: $space--sm;
+}
+.roboto--lt {
+	font-family: roboto--lt;
+}
+.roboto--bd {
+	font-family: roboto--bd;
+}
+@import 'default_tablets';
+@import 'default_mobiles';

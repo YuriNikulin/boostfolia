@@ -1,0 +1,54 @@
+
+.b-header {
+	padding: 45px 0;
+	&__menu-toggle {
+		position: absolute;
+		right: 5px;
+		line-height: 46px;
+		font-size: 42px;
+		z-index: 4;
+		transition: .2s ease-in-out .1s;
+		animation-fill-mode: both;
+		&--opened {
+			font-size: 44px;
+			// position: fixed;
+			right: 260px;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	&-content {
+		position: relative;
+	}
+	.side-menu {
+		background: #000;
+		padding: 0 25px;
+		height: 100%;
+		width: 250px;
+		position: fixed;
+		z-index: 3;
+		right: -350px;
+		top: 0;
+		transition: .5s ease-in-out;
+		li {
+			padding: 5px 0;
+			transition: .2s ease-in-out;
+			&:hover {
+				background: rgba(142, 135, 229,.3);
+				color: darken(#fff, 15%);
+			}
+		}
+		&--closed {
+
+		}
+		&--opened {
+			transform: translateX(-350px);
+		}
+	}
+}
+@import 'b-header_tablets'

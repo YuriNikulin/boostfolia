@@ -1,0 +1,31 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "my first gulp project",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-concat": "^2.6.0",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-rename": "^1.0.3",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucky",
+  "license": "ISC"
+}

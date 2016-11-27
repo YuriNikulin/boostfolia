@@ -1,0 +1,145 @@
+// @font-face {
+// 	font-family: "icons";
+// 	src: url('../../fonts/icons/icons.eot');
+// 	src: url('../../fonts/icons/icons.eot?#iefix') format('eot'),
+// 		url('../../fonts/icons/icons.woff2') format('woff2'),
+// 		url('../../fonts/icons/icons.woff') format('woff'),
+// 		url('../../fonts/icons/icons.ttf') format('truetype'),
+// 		url('../../fonts/icons/icons.svg#icons') format('svg');
+// }
+
+@font-face {
+	font-family: "icons";
+	src: url('../../fonts/icons/icons.eot');
+	src: url('../../fonts/icons/icons.eot?#iefix') format('eot'),
+		url('../../fonts/icons/icons.svg#icons') format('svg'),
+		url('../../fonts/icons/icons.woff2') format('woff2'),
+		url('../../fonts/icons/icons.woff') format('woff'),
+		url('../../fonts/icons/icons.ttf') format('truetype');
+}
+
+
+@mixin icon-styles {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == checkmark {
+		$char: "\E001";
+	}
+	@if $filename == checkround {
+		$char: "\E002";
+	}
+	@if $filename == cross {
+		$char: "\E003";
+	}
+	@if $filename == eye {
+		$char: "\E004";
+	}
+	@if $filename == location {
+		$char: "\E005";
+	}
+	@if $filename == lock {
+		$char: "\E006";
+	}
+	@if $filename == mail {
+		$char: "\E007";
+	}
+	@if $filename == man {
+		$char: "\E008";
+	}
+	@if $filename == menu {
+		$char: "\E009";
+	}
+	@if $filename == new {
+		$char: "\E00A";
+	}
+	@if $filename == photo {
+		$char: "\E00B";
+	}
+	@if $filename == plus {
+		$char: "\E00C";
+	}
+	@if $filename == settings {
+		$char: "\E00D";
+	}
+	@if $filename == time {
+		$char: "\E00E";
+	}
+	@if $filename == volume {
+		$char: "\E00F";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-checkmark {
+	@include icon(checkmark);
+}
+.icon-checkround {
+	@include icon(checkround);
+}
+.icon-cross {
+	@include icon(cross);
+}
+.icon-eye {
+	@include icon(eye);
+}
+.icon-location {
+	@include icon(location);
+}
+.icon-lock {
+	@include icon(lock);
+}
+.icon-mail {
+	@include icon(mail);
+}
+.icon-man {
+	@include icon(man);
+}
+.icon-menu {
+	@include icon(menu);
+}
+.icon-new {
+	@include icon(new);
+}
+.icon-photo {
+	@include icon(photo);
+}
+.icon-plus {
+	@include icon(plus);
+}
+.icon-settings {
+	@include icon(settings);
+}
+.icon-time {
+	@include icon(time);
+}
+.icon-volume {
+	@include icon(volume);
+}

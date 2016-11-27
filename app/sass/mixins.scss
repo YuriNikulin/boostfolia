@@ -1,0 +1,11 @@
+@mixin line($width) {
+	&:after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: $width;
+		height: 2px;
+		background: $line;
+	}
+}

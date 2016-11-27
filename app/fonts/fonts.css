@@ -1,0 +1,16 @@
+@font-face {
+	font-family: noodle;
+	src: url(../fonts/big/big_noodle_titling.ttf);
+}
+@font-face {
+	font-family: roboto--bd;
+	src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+@font-face {
+	font-family: roboto--lt;
+	src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+@font-face {
+	font-family: roboto--thin;
+	src: url(../fonts/roboto/Roboto-Thin.ttf);
+}

@@ -1,0 +1,12 @@
+@media all and (max-width: $tablets-res) {
+	.b-scroll {
+		height: 400px;
+		.h1 {
+		line-height: 400px;
+	}
+		.h3 {
+			line-height: 400px;
+			top: 45px;
+		}
+	}
+}
