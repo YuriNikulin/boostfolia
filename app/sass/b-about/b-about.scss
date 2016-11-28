@@ -2,25 +2,22 @@
 	.h2 span {
 		position: relative;
 		@include line(calc(100% - 6px));
-		// &:after {
-		// 	content: "";
-		// 	height: 2px;
-		// 	width: calc(100% - 6px);
-		// 	background: $line;
-		// 	position: absolute;
-		// 	top: 100%;
-		// 	left: 0;
-		// }
 	}
 	&-item {
 		display: inline-block;
 		background: $gray--light;
 		padding: 20px 40px;
 		width: 31%;
-		min-height: 196px;
-		overflow-y: hidden;
-		text-overflow: ellipsis;
 		margin-right: 20px;
+		height: 196px;
+		vertical-align: top;
+		p {
+			@include text-height(14, 3);
+			max-width: 100%;
+			overflow: hidden;
+			display: -webkit-box;
+			text-overflow: ellipsis;
+		}
 		&:last-of-type {
 			margin-right: 0;
 		}

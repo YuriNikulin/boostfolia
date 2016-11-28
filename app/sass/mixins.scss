@@ -9,3 +9,6 @@
 		background: $line;
 	}
 }
+@mixin text-height($line-height, $lines-to-show) {
+	height: ($line-height * $lines-to-show) * 1px;
+}

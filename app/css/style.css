@@ -8263,7 +8263,9 @@ p {
   .h2 {
     font-size: 24px; }
   .h3 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .h5 {
+    font-size: 14px; } }
 
 @media all and (max-width: 750px) {
   .h1 {
@@ -8377,10 +8379,15 @@ p {
   background: #ebebeb;
   padding: 20px 40px;
   width: 31%;
-  min-height: 196px;
-  overflow-y: hidden;
-  text-overflow: ellipsis;
-  margin-right: 20px; }
+  margin-right: 20px;
+  height: 196px;
+  vertical-align: top; }
+  .b-about-item p {
+    height: 42px;
+    max-width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis; }
   .b-about-item:last-of-type {
     margin-right: 0; }
   .b-about-item__img img {
